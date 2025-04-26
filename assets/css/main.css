@@ -90,7 +90,62 @@ input, select, textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none; }
+  .hidden {
+    display: none;
+  }
+  
+  
+  #stats {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white; /* warna background */
+  }
+  
+  #stats h3 {
+    font-size: 24px;
+    color: #690808; /* warna biru */
+    font-weight: bolder;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    text-align: center;
+    max-width: 350px;
+    min-width: 200px;
+    border: 2px solid #111111;
 
+    border-radius: 10px;
+  }
+  .stat-item:hover{
+    transform: scale(1.05); 
+  }
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item h3 {
+    font-size: 45px;
+    color: #004AAD;
+    margin: 10px 0 5px 0;
+  }
+  
+  .stat-item p {
+    font-size: 20px;
+    color: #690808;
+    font-style: italic;
+    margin-top: -20px;
+  }
+    
 /* Typography */
 html {
   font-size: 13pt; }
